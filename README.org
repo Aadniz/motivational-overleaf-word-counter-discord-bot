@@ -1,0 +1,31 @@
+#+TITLE: Motivational Overleaf word counter discord bot
+#+AUTHOR: Aadniz
+#+STARTUP: showchildren
+#+STARTUP: hideblocks
+
+
+This bot keeps us motivated writing overleaf documents, continuously reminding us why we are doing what we do.
+
+* Creating necessary keys
+
+To be able to run this code, you need a few environment variables. These are:
+
+| Key Name             | Description                                                                |
+|----------------------+----------------------------------------------------------------------------|
+| DISCORD_TOKEN        | Discord bot token                                                          |
+| DISCORD_CHANNEL      | The channel ID to send messages in                                         |
+| OVERLEAF_SESSION_KEY | Overleaf session cookie                                                    |
+| OVERLEAF_DOC_ID      | Overleaf document id. This can be found in the URL. A 24 character long ID |
+
+These can either be an environment variable, or saved in `Secrets.toml`
+
+Example toml:
+
+#+BEGIN_SRC toml
+DISCORD_TOKEN="<Discord bot token>"
+DISCORD_CHANNEL="<The channel to send messages in>"
+OVERLEAF_SESSION_KEY="<Overleaf session cookie>"
+OVERLEAF_DOC_ID="<Overleaf id found in URL>"
+#+END_SRC
+
+The overleaf session key can be found in the `overleaf_session2` cookie.
