@@ -81,8 +81,8 @@ impl EventHandler for Handler {
                     if let Ok(word_count) = get_words().await {
                         if (word_count as f32) > (last_remembered_word_count as f32 * 1.1) {
                             last_remembered_word_count = word_count;
-                            send_speechless(&ctx, word_count).await;
                             send_embed(&ctx, word_count).await;
+                            send_speechless(&ctx, word_count).await;
                             send_motivation(&ctx).await;
                         }
                     };
