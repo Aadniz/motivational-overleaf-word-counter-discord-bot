@@ -3,6 +3,7 @@
 #+STARTUP: showchildren
 #+STARTUP: hideblocks
 
+This repo is a learning exercize for cross compiling to an arm7 architecture and async using nix
 
 This bot keeps us motivated writing overleaf documents, continuously reminding us why we are doing what we do.
 
